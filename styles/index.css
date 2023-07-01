@@ -9,10 +9,21 @@
 
     
 }
-.container .name{
-    display:flex;
+.name-text{
     color: rgb(255, 255, 255);
     font-family: MN MINI,serif;
+    font-size: 40px;
 
+
+}
+.social img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+} 
+.section{
+    max-height: 720px;
+    padding-top: 300px;
+    padding-left: 200px;
 
 }
