@@ -1,11 +1,9 @@
-@media only screen and (max-width: 1024px) and (max-height: 768px){
-    .section{
-        max-height: 720px;
-        padding-top: 220px;
-        padding-left: 200px;
+@media only screen and (max-width: 1024) {
+    body {
+        color: red; 
     }
     .section .name-text{
-        color: rgb(190, 72, 72);
+        color: rgb(18, 74, 226);
         font-family: MN MINI,serif;
         font-size: 50px;
     }
