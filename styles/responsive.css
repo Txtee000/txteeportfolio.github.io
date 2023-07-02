@@ -1,6 +1,12 @@
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: red;
-
+@media only screen and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+    .section{
+        max-height: 720px;
+        padding-top: 220px;
+        padding-left: 200px;
+    }
+    .section .name-text{
+        color: rgb(255, 255, 255);
+        font-family: MN MINI,serif;
+        font-size: 50px;
     }
 }
