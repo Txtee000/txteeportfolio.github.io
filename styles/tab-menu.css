@@ -6,7 +6,7 @@
 
 
 /*Phone*/
-@media only screen and (max-width: 400px) and (orientation:portrait){
+@media only screen and (max-width: 600px) and (orientation:portrait){
     header{
         position: fixed;
         left: -250px;
@@ -124,7 +124,7 @@
     }
 }
 /*COM*/
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 601px){
     nav ul li a img{
         width: 20px;
         height: 20px;
