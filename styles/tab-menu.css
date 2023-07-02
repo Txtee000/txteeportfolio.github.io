@@ -6,7 +6,7 @@
 
 
 /*Phone*/
-@media only screen and (max-width: 400px) and (orientation:portrait){
+@media only screen and (max-width: 600px) and (orientation:portrait){
     header{
         position: fixed;
         left: -250px;
@@ -22,6 +22,7 @@
     }
     header ul a{
         display: block;
+        font-family:  MN MINI,serif;
         height: 100%;
         width: 100%;
         line-height: 65px;
