@@ -3,48 +3,162 @@
     padding: 0px;
     font-family: MN Kha Ki,serif;
 }
-nav ul li a img{
-    width: 20px;
-    height: 20px;
-    padding: 0px 5px;
-    
-    
-}
 
-nav ul{
-    display: flex;
-    justify-content: center;
 
+/*Phone*/
+@media only screen and (max-width: 400px) and (orientation:portrait){
+    header{
+        position: fixed;
+        left: -250px;
+        width: 130px;
+        height: 100%;
+        background: rgb(61, 177, 255);
+        transition: all .6s ease;
+    }
+    nav ul li a img{
+        width: 20px;
+        height: 20px;
+        padding: 0px 5px;
+    }
+    header ul a{
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 65px;
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        padding-left: 20px;
+        padding-top: 20px ;
+        padding-bottom: 20px ;
+        box-sizing: border-box;
+        border-top: 1px solid rgba(255,255,255,.1);
+        border-bottom:1px solid black ;
+        transition: .3s;
+    }
+    ul li:hover a{
+        padding-left: 50px;
+    }
+    header ul a img{
+        margin-right: 16px;
+    }
+    #check{
+        display: none;
+    }
+    label img{
+        width: 30px;
+    }
+    label #btn , label #cancel{
+        position: absolute;
+        cursor: pointer;
+        background: rgb(61, 177, 255);
+        border-radius: 4px;
+    }
+    label #btn{
+        left: 20px;
+        top: 25px  ;
+        font-size: 35px;
+        padding: 1px 12px;
+        transition: .4s;
+    }
+    label #cancel{
+        z-index: 111;
+        left: -190px;
+        width: 10px;
+        top: 17px;
+         padding: 0px 10px;
+         transition: .4s;
+    }
+     #check:checked ~ header{
+        left: 0px;
+     }
+     #check:checked ~ label #btn{
+        left:250px;
+        opacity: 0;
+        pointer-events: none;
+     }
+     #check:checked ~ label #cancel{
+        left:36px;
+        top: 675px;
+        text-align:end;
+        
+     }
 }
-nav ul li {
-    list-style: none;
-    padding: 20px 30px;
-    
+/*IPAD portrait*/
+@media only screen and (min-height: 1000px) and (orientation:portrait){
+    nav ul li a img{
+        width: 20px;
+        height: 20px;
+        padding: 0px 5px;  
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li {
+        list-style: none;
+        padding: 20px 30px;    
+    }
+    nav ul li a{
+        text-decoration: none; /* ไม่เอาขีด */
+        color: white;
+        font-size: 30px;  
+    }
+    nav{
+        
+        width: 100%;
+    }
+    nav ul li a:hover{
+        color:rgb(61, 177, 255);
+        filter: invert(59%) sepia(98%) saturate(2197%) hue-rotate(181deg) brightness(105%) contrast(102%);
+        text-decoration: underline 2px;
+        text-underline-offset: 4.5px;
+        background-size: 150% 150%;
+        transition: .4s;    
+    }
+    nav ul li a #menu{
+        width: 30px;
+        height: 30px;
+        padding: 2px 0px;
+        
+    }
 }
-nav ul li a{
-    text-decoration: none; /* ไม่เอาขีด */
-    color: white;
-    font-size: 30px;
-    
-    
-}
-nav{
-    
-    width: 100%;
-
-}
-nav ul li a:hover{
-    color:rgb(61, 177, 255);
-    filter: invert(59%) sepia(98%) saturate(2197%) hue-rotate(181deg) brightness(105%) contrast(102%);
-    text-decoration: underline 2px;
-    text-underline-offset: 4.5px;
-    background-size: 150% 150%;
-    transition: .4s;
-    
-}
-nav ul li a #menu{
-    width: 30px;
-    height: 30px;
-    padding: 2px 0px;
-    
+/*COM*/
+@media only screen and (min-width: 1000px){
+    nav ul li a img{
+        width: 20px;
+        height: 20px;
+        padding: 0px 5px;  
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li {
+        list-style: none;
+        padding: 20px 30px;    
+    }
+    nav ul li a{
+        text-decoration: none; /* ไม่เอาขีด */
+        color: white;
+        font-size: 30px;  
+    }
+    nav{
+        
+        width: 100%;
+    }
+    nav ul li a:hover{
+        color:rgb(61, 177, 255);
+        filter: invert(59%) sepia(98%) saturate(2197%) hue-rotate(181deg) brightness(105%) contrast(102%);
+        text-decoration: underline 2px;
+        text-underline-offset: 4.5px;
+        background-size: 150% 150%;
+        transition: .4s;    
+    }
+    nav ul li a #menu{
+        width: 30px;
+        height: 30px;
+        padding: 2px 0px;
+        
+    }
 }

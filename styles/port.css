@@ -21,5 +21,20 @@
     color:white;
     font-size: 50px;
     min-height: 80vh;
-
+}
+#check{
+    display: none;
+}
+label img{
+    width: 30px;
+}
+label #btn , label #cancel{
+    position: absolute;
+    cursor: pointer;
+}
+label #btn{
+    left: 40px;
+    top: 25;
+    font-size: 35px;
+    color: white;
 }
