@@ -9,9 +9,22 @@
         background-color: blue;
 
     }
+    .section .name-text{
+        color: rgb(255, 255, 255);
+        font-family: MN MINI,serif;
+        font-size: 50px;
+    }
     .section{
         max-height: 720px;
-        padding-top: 100px;
+        padding-top: 300px;
         padding-left: 200px;
+    }
+    .section .name-text p{
+        width: 440px;
+        max-width: 100%;
+        font-weight: 4;
+        line-height: 1.5px;
+        margin-bottom: 30px;
+        font-size: 40px;
     }
 }
