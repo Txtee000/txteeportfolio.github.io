@@ -60,14 +60,16 @@
         font-size: 35px;
         padding: 1px 12px;
         transition: .4s;
+        
     }
     label #cancel{
         z-index: 111;
         left: -190px;
         width: 10px;
         top: 17px;
-         padding: 0px 10px;
-         transition: .4s;
+        padding: 0px 10px;
+        transition: .4s;
+        
     }
      #check:checked ~ header{
         left: 0px;
@@ -83,6 +85,10 @@
         text-align:end;
         
      }
+}
+@media only screen and (max-width: px) and (orientation:portrait){
+
+
 }
 /*IPAD portrait*/
 @media only screen and (min-height: 1000px) and (orientation:portrait){

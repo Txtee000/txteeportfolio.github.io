@@ -100,7 +100,7 @@
 }
 
 /*Phone*/
-@media only screen and (max-width: 400px) and (orientation:portrait){
+@media only screen and (max-width: 600px) and (orientation:portrait){
     #check , label img{
         opacity: 1;
         position: relative;
