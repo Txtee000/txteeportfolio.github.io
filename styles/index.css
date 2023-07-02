@@ -66,14 +66,9 @@
     
 }
 @media only screen and (max-width: 1180px) {
-    body {
-        background-color: blue;
-
-    }
     .section{
         max-height: 720px;
         padding-top: 200px;
         padding-left: 200px;
-        background-color: red;
     }    
 }
