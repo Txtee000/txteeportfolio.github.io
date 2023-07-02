@@ -4,9 +4,89 @@
     font-family: MN Kha Ki,serif;
 }
 
-
-/*Phone*/
-@media only screen and (max-width: 600px) and (orientation:portrait){
+/*A52s*/
+@media only screen and (max-height: 650px) and (orientation:portrait){
+    header{
+        position: fixed;
+        left: -250px;
+        width: 130px;
+        height: 100%;
+        background: rgb(61, 177, 255);
+        transition: all .6s ease;
+    }
+    nav ul li a img{
+        width: 10px;
+        height: 10px;
+    }
+    header ul li a{
+        display: block;
+        font-family:  MN MINI,serif;
+        height: 100%;
+        width: 100%;
+        line-height: 30px;
+        font-size: 15px;
+        text-decoration: none;
+        color: white;
+        padding-left: 20px;
+        padding-top: 30px ;
+        padding-bottom: 25px ;
+        box-sizing: border-box;
+        border-top: 1px solid rgba(255,255,255,.1);
+        border-bottom:1px solid black ;
+        transition: .3s;
+    }
+    ul li:hover a{
+        padding-left: 50px;
+    }
+    header ul a img{
+        margin-right: 16px;
+    }
+    #check{
+        display: none;
+    }
+    label img{
+        width: 30px;
+    }
+    label #btn , label #cancel{
+        position: absolute;
+        cursor: pointer;
+        background: rgb(61, 177, 255);
+        border-radius: 4px;
+    }
+    label #btn{
+        left: 20px;
+        top: 25px  ;
+        font-size: 35px;
+        padding: 1px 12px;
+        transition: .4s;
+        
+    }
+    label #cancel{
+        z-index: 111;
+        left: -190px;
+        width: 10px;
+        top: 17px;
+        padding: 0px 10px;
+        transition: .4s;
+        
+    }
+     #check:checked ~ header{
+        left: 0px;
+     }
+     #check:checked ~ label #btn{
+        left:250px;
+        opacity: 0;
+        pointer-events: none;
+     }
+     #check:checked ~ label #cancel{
+        left:36px;
+        top: 547px;
+        text-align:end;
+        
+     }
+}
+/*IPHONE*/
+@media only screen and (min-height: 651px) and (max-height: 999px) and (orientation:portrait){
     header{
         position: fixed;
         left: -250px;
@@ -18,15 +98,15 @@
     nav ul li a img{
         width: 20px;
         height: 20px;
-        padding: 0px 5px;
+        padding: 0px 1px;
     }
     header ul a{
         display: block;
         font-family:  MN MINI,serif;
         height: 100%;
         width: 100%;
-        line-height: 65px;
-        font-size: 20px;
+        line-height: 75px;
+        font-size: 15px;
         text-decoration: none;
         color: white;
         padding-left: 20px;
@@ -81,11 +161,12 @@
         pointer-events: none;
      }
      #check:checked ~ label #cancel{
-        left:36px;
-        top: 675px;
+        left:40px;
+        top: 775px;
         text-align:end;
         
      }
+     
 }
 
 /*IPAD portrait*/
