@@ -28,8 +28,8 @@
         text-decoration: none;
         color: white;
         padding-left: 20px;
-        padding-top: 30px ;
-        padding-bottom: 25px ;
+        padding-top: 15px ;
+        padding-bottom: 20px ;
         box-sizing: border-box;
         border-top: 1px solid rgba(255,255,255,.1);
         border-bottom:1px solid black ;
@@ -80,7 +80,7 @@
      }
      #check:checked ~ label #cancel{
         left:36px;
-        top: 547px;
+        top: 467px;
         text-align:end;
         
      }
