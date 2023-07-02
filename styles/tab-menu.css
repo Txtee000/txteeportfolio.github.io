@@ -87,16 +87,23 @@
         
      }
 }
-@media only screen and (max-width: px) and (orientation:portrait){
 
-
-}
 /*IPAD portrait*/
 @media only screen and (min-height: 1000px) and (orientation:portrait){
-    nav ul li a img{
-        width: 20px;
-        height: 20px;
-        padding: 0px 5px;  
+    nav ul .home a{
+        margin-left: 7px;
+    }
+    nav ul .port a{
+        margin-left: 19px;
+    }
+    nav ul .user a{
+        margin-left: 11px;
+    }
+    nav ul .activity a{
+        margin-left: 17px;
+    }
+    nav ul .award a{
+        margin-left: 15px;
     }
     nav ul{
         display: flex;

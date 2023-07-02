@@ -102,11 +102,6 @@
 
 /*Phone*/
 @media only screen and (max-width: 600px) and (orientation:portrait){
-    .section .name-text{
-        color: rgb(255, 255, 255);
-        font-family: MN MINI,serif;
-        font-size: 50px;
-    }
     #check , label img{
         opacity: 1;
         position: relative;
