@@ -80,7 +80,7 @@
      }
      #check:checked ~ label #cancel{
         left:36px;
-        top: 367px;
+        top: 467px;
         text-align:end;
         
      }
@@ -162,7 +162,7 @@
      }
      #check:checked ~ label #cancel{
         left:40px;
-        top: 775px;
+        top: 475px;
         text-align:end;
         
      }
