@@ -6,10 +6,11 @@
 
 /*small*/
 @media only screen and (max-height: 740px) and (orientation:portrait){
+
     header{
         position: fixed;
         left: -250px;
-        width: 150px;
+        width: 130px;
         height: 100%;
         background: rgb(61, 177, 255);
         transition: all .6s ease;
@@ -23,12 +24,12 @@
         font-family:  MN MINI,serif;
         height: 100%;
         width: 100%;
-        line-height: 35px;
-        font-size: 20px;
+        line-height: 30px;
+        font-size: 15px;
         text-decoration: none;
         color: white;
         padding-left: 20px;
-        padding-top: 20px ;
+        padding-top: 15px ;
         padding-bottom: 20px ;
         box-sizing: border-box;
         border-top: 1px solid rgba(255,255,255,.1);
@@ -79,12 +80,13 @@
         pointer-events: none;
      }
      #check:checked ~ label #cancel{
-        left:48px;
-        top: 497px;
+        left:36px;
+        top: 467px;
         text-align:end;
         
      }
 }
+
 /*mediam*/
 @media only screen and (min-height: 741px) and (max-height: 999px) and (orientation:portrait){
     header{
