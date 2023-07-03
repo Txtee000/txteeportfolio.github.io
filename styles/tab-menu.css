@@ -4,9 +4,9 @@
     font-family: MN Kha Ki,serif;
 }
 
-/*A52s*/
+/*small*/
 @media only screen and (max-height: 740px) and (orientation:portrait){
-
+    
     header{
         position: fixed;
         left: -250px;
@@ -81,7 +81,7 @@
      }
      #check:checked ~ label #cancel{
         left:36px;
-        top: 467px;
+        top: 427px;
         text-align:end;
         
      }
@@ -163,7 +163,7 @@
      }
      #check:checked ~ label #cancel{
         left:40px;
-        top: 475px;
+        top: 725px;
         text-align:end;
         
      }
