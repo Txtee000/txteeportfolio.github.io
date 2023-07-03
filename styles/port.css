@@ -14,7 +14,14 @@
     position: relative;
     
 }
-
+.container .section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 50px;
+    min-height: 80vh;
+}
 #check{
     display: none;
 }
@@ -37,35 +44,11 @@ label #btn{
     width: 1px;
 }
 
-/*Ipad*/
-@media only screen and (min-width: 1000px){
-    .container .section{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color:white;
-        font-size: 50px;
-        min-height: 80vh;
-    }
-}    
-
-
-/*mediam phone*/
-@media only screen and (min-height: 741px) and (max-height: 999px) and (orientation:portrait){
+/*Phone*/
+@media only screen and (max-width: 600px) and (orientation:portrait){
     #check , label img{
         opacity: 1;
         position: relative;
         width: 20px;
     }
-
 }
-/*small phone*/
-@media only screen and (max-height: 740px) and (orientation:portrait){
-    #check , label img{
-        opacity: 1;
-        position: relative;
-        width: 20px;
-    }
-    
-}
-
