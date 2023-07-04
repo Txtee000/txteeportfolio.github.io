@@ -14,6 +14,7 @@
         height: 100%;
         background: rgb(61, 177, 255);
         transition: all .6s ease;
+        z-index:3;
     }
     nav ul li a img{
         width: 10px;
@@ -63,7 +64,7 @@
         
     }
     label #cancel{
-        z-index: 111;
+        z-index: 5;
         left: -190px;
         width: 10px;
         top: 17px;
@@ -83,7 +84,7 @@
         left:36px;
         top: 427px;
         text-align:end;
-        
+        position: fixed;
      }
 }
 /*mediam*/
