@@ -20,16 +20,159 @@
     position: absolute;
     width: 1px;
 }
+/*!------------------------------------------------------------------*/
+.section{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;   
+}
+.box{
+    margin-top: 100px;
+    width:900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box .select-box{
+    position: relative;
+    width: 350px;
+    height: 200px;
+    background: #2e2d2d;                    
+    border-radius: 10px;
+    margin: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+.box .select-box a{
+    text-decoration: none;
+}
+.box .select-box .icon{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color: white;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 1s;
+    
+}
+.box .select-box .icon span{
+    padding-top: 100px;
+    transition: 1s;
+
+}
+.box .select-box .content{
+    color: white;
+}
+.box .select-box .icon img{
+    width: 60px;
+    top: 1020px;
+    padding-top: 110px;
+}
+.box .select-box .content{
+    font-size: 40px;
+}
+.box .select-box .content img{
+    width: 70px;
+    height: 70px;
+    padding: auto;
+}
+.box .select-box:hover .icon span{
+    padding-top: 0px ;
+    font-size: 40px;
+}
+.box .select-box:hover .icon span h2{
+    visibility: hidden;
+    position: absolute;
+}
+
+.box .select-box:nth-child(1) .icon{
+    box-shadow:  0 0 0 400px #F08080;
+    background: #F08080;
+}
+.box .select-box:nth-child(1):hover .icon{
+    box-shadow:  0 0 0 0px #F08080;  
+}
+.box .select-box:nth-child(2) .icon{
+    box-shadow:  0 0 0 400px #90EE90;
+    background: #90EE90;
+}
+.box .select-box:nth-child(2):hover .icon{
+    box-shadow:  0 0 0 0px #90EE90;
+}
+.box .select-box:nth-child(3) .icon{
+    box-shadow:  0 0 0 400px #AFEEEE;
+    background: #AFEEEE;
+}
+.box .select-box:nth-child(3):hover .icon{
+    box-shadow:  0 0 0 0px #AFEEEE;
+}
+.box .select-box:nth-child(4) .icon{
+    box-shadow:  0 0 0 400px #7B68EE;
+    background: #7B68EE;
+}
+.box .select-box:nth-child(4):hover .icon{
+    box-shadow:  0 0 0 0px #7B68EE;
+}
+/*!------------------------------------------------------------------*/
 
 /*small*/
 @media only screen and (max-width: 600px) and (orientation:portrait){
+    .test{
+        font-size: 123px;
+        color:wheat;
+    }
+    .container{
+        width: 100%;
+        min-height: 120vh;
+        height: 100%;
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/images/bg2.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
     #check , label img{
         opacity: 1;
         position: relative;
         width: 20px;
     }
+    .box{
+        margin-top: 50px;
+        width:300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        
+    }
+    .box .select-box{
+        position: relative;
+        width: 160px;
+        height: 150px;
+        background: #2e2d2d;                    
+        border-radius: 10px;
+        margin: 30px;
+        box-sizing: border-box;
+        overflow: hidden;
+        text-align: center;
+    }
+    .box .select-box .icon{
+        
+        font-size: 30px;   
+    }
     
 }
+/*!------------------------------------------------------------------*/
 /*Ipad*/
 @media only screen and (max-width: 1180px){
     .section .name-text{
@@ -58,83 +201,16 @@
         padding-left: px;
     }    
 }
+/*!------------------------------------------------------------------*/
 /*COM*/
 @media only screen and (min-width: 601px){
-    .section{
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 50vh;   
-    }
-    .box{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .box .select-box{
-        position: relative;
-        width: 350px;
-        height: 200px;
-        background: #fff;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        border-radius: 10px;
-        margin: 30px;
-        box-sizing: border-box;
-        overflow: hidden;
-        text-align: center;
-    }
-    .box .select-box .icon{
-        position: relative;
-        width: 80px;
-        height: 80px;
-        color: white;
-        background: #000;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        border-radius: 50%;
-        font-size: 40px;
-        font-weight: bold;
-        transition: 1s;
-    }
-    .box .select-box .icon img{
-        width: 60px;
-        top: 1020px;
-        padding-top: 110px;
-    }
-    .box .select-box .content{
-        font-size: 40px;
-    }
-    .box .select-box:nth-child(1) .icon{
-        box-shadow:  0 0 0 400px #e91e63;
-        background: #e91e63;
-    }
-    .box .select-box:nth-child(1):hover .icon{
-        box-shadow:  0 0 0 0px #e91e63;
-    }
-    .box .select-box:nth-child(2) .icon{
-        box-shadow:  0 0 0 400px #1ee962;
-        background: #1ee962;
-    }
-    .box .select-box:nth-child(2):hover .icon{
-        box-shadow:  0 0 0 0px #1ee962;
-    }
-    .box .select-box:nth-child(3) .icon{
-        box-shadow:  0 0 0 400px #1eb0e9;
-        background: #1eb0e9;
-    }
-    .box .select-box:nth-child(3):hover .icon{
-        box-shadow:  0 0 0 0px #1eb0e9;
-    }
-    .box .select-box:nth-child(4) .icon{
-        box-shadow:  0 0 0 400px #6c1ee9;
-        background: #6c1ee9;
-    }
-    .box .select-box:nth-child(4):hover .icon{
-        box-shadow:  0 0 0 0px #6c1ee9;
-    }
+    
 
+}
+/*!------------------------------------------------------------------*/
+/*IPAD portrait*/
+@media only screen and (min-height: 1000px) and (orientation:portrait){
+    .box{
+        justify-content: center;
+    }
 }
