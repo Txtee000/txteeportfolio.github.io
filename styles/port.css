@@ -11,8 +11,7 @@
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/images/bg2.jpg);
     background-size: cover;
     background-position: center;
-    position: relative;
-    
+    position: relative;  
 }
   
 #check , label img{
@@ -68,6 +67,7 @@
 }
 .box .select-box .icon span{
     padding-top: 100px;
+
 
 }
 .box .select-box .content{
